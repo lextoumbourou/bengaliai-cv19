@@ -11,6 +11,11 @@ class ExperimentParams:
 
 EXPERIMENTS = [
     ExperimentParams(
+        name='more-ln-head-plus-mish',
+        template='fastai2.ipynb',
+        params=dict(MODEL_HEAD='mish_head')
+    ),
+    ExperimentParams(
         name='fastai2-baseline',
         template='fastai2.ipynb',
         params={}

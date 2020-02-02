@@ -1,3 +1,4 @@
 .ipynb_checkpoints
 .venv
-
+wandb
+__pycache__
