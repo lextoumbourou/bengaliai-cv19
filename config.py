@@ -11,6 +11,16 @@ class ExperimentParams:
 
 EXPERIMENTS = [
     ExperimentParams(
+        name='mixup-cutup-50epochs',
+        template='fastai.ipynb',
+        params=dict(BATCH_SIZE=128, NUM_EPOCHS=50)
+    ),
+    ExperimentParams(
+        name='more-epochs',
+        template='fastai2.ipynb',
+        params=dict(BATCH_SIZE=128, NUM_EPOCHS=20)
+    ),
+    ExperimentParams(
         name='more-ln-head-plus-mish',
         template='fastai2.ipynb',
         params=dict(MODEL_HEAD='mish_head')
