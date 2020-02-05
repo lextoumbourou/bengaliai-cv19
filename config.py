@@ -11,6 +11,11 @@ class ExperimentParams:
 
 EXPERIMENTS = [
     ExperimentParams(
+        name='mixup-cutup-until-convergence',
+        template='fastai.ipynb',
+        params=dict()
+    ),
+    ExperimentParams(
         name='mixup-cutup-50epochs',
         template='fastai.ipynb',
         params=dict(BATCH_SIZE=128, NUM_EPOCHS=50)
