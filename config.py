@@ -11,6 +11,11 @@ class ExperimentParams:
 
 EXPERIMENTS = [
     ExperimentParams(
+        name='progressive-sprinkles',
+        template='fastai.ipynb',
+        params=dict(PROG_SPRINKLES=True)
+    ),
+    ExperimentParams(
         name='mixup-cutup-until-convergence',
         template='fastai.ipynb',
         params=dict()
