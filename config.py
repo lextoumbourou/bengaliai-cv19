@@ -10,6 +10,11 @@ class ExperimentParams:
 
 
 EXPERIMENTS = [
+   ExperimentParams(
+        name='label-smoothing',
+        template='fastai.ipynb',
+        params=dict()
+    ),
     ExperimentParams(
         name='progressive-sprinkles',
         template='fastai.ipynb',
