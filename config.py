@@ -10,7 +10,12 @@ class ExperimentParams:
 
 
 EXPERIMENTS = [
-   ExperimentParams(
+    ExperimentParams(
+        name='label-smoothing-v2',
+        template='fastai.ipynb',
+        params=dict(LABEL_SMOOTHING_EPS=0.05)
+    ),
+    ExperimentParams(
         name='label-smoothing',
         template='fastai.ipynb',
         params=dict()
