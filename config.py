@@ -11,6 +11,11 @@ class ExperimentParams:
 
 EXPERIMENTS = [
     ExperimentParams(
+        name='mixnet_xl',
+        template='fastai.ipynb',
+        params=dict(LABEL_SMOOTHING_EPS=0.0, ENCODER_ARCH='mixnet_xl', BATCH_SIZE=64)
+    ),
+    ExperimentParams(
         name='label-smoothing-v2',
         template='fastai.ipynb',
         params=dict(LABEL_SMOOTHING_EPS=0.05)
