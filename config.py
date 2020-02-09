@@ -11,6 +11,11 @@ class ExperimentParams:
 
 EXPERIMENTS = [
     ExperimentParams(
+        name='effb0_baseline',
+        template='fastai.ipynb',
+        params=dict(ENCODER_ARCH='efficientnet-b0', BATCH_SIZE=128)
+    ),
+    ExperimentParams(
         name='effb0_with_gem',
         template='fastai.ipynb',
         params=dict(ENCODER_ARCH='efficientnet-b0', BATCH_SIZE=128)
