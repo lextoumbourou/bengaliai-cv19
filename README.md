@@ -17,9 +17,14 @@ pip install fastparquet
 pip install opencv-python
 ```
 
+```
+sudo apt-get install libsnappy-dev
+```
+
 ## Get data
 
 ```
+kaggle competitions download -c bengaliai-cv19 --path=data/bengaliai-cv19
 kaggle datasets download -d iafoss/grapheme-imgs-128x128 --path=data/grapheme-imgs-128x128
 kaggle kernels output  yiheng/iterative-stratification --path=data/iterative-stratification
 ```
