@@ -11,7 +11,7 @@ class ExperimentParams:
 
 EXPERIMENTS = [
     ExperimentParams(
-        name='se_resnext50_32x4d_224x224_fp16',
+        name='se_resnext50_32x4d_224x224_fp16_gem',
         template='fastai.ipynb',
         params=dict(
             ENCODER_ARCH='se_resnext50_32x4d', BATCH_SIZE=128
