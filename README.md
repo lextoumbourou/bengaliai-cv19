@@ -5,12 +5,16 @@
 ```
 python -m venv .venv
 source .venv/bin/activate
+pip install fastai
 pip install git+https://github.com/fastai/fastai2
 pip install efficientnet-pytorch
 pip install jupyter papermill flake8 jupyter_contrib_nbextensions matplotlib
 pip install iterative-stratification
 pip install kaggle
 pip install "pillow<7"
+pip install python-snappy
+pip install fastparquet
+pip install opencv-python
 ```
 
 ## Get data
