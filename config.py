@@ -11,6 +11,11 @@ class ExperimentParams:
 
 EXPERIMENTS = [
     ExperimentParams(
+        name='eff0_finetune_with_cutmix',
+        template='fastai-cutmix-stage2.ipynb',
+        params=dict(ENCODER_ARCH='efficientnet-b0', BATCH_SIZE=192, LOAD_EXPERIMENT='lex/bengaliai-cv19/zgfjwgwj')
+    ),
+    ExperimentParams(
         name='effb0_move_to_fp16',
         template='fastai.ipynb',
         params=dict(ENCODER_ARCH='efficientnet-b0', BATCH_SIZE=256, USE_FP=True)
