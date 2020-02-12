@@ -18,7 +18,7 @@ EXPERIMENTS = [
     ExperimentParams(
         name='effb0_move_to_fp16',
         template='fastai.ipynb',
-        params=dict(ENCODER_ARCH='efficientnet-b0', BATCH_SIZE=256, USE_FP=True)
+        params=dict(ENCODER_ARCH='efficientnet-b0', BATCH_SIZE=256, USE_FP16=True)
     ),
     ExperimentParams(
         name='effb0_change_norm_std',
