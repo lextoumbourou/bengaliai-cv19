@@ -11,6 +11,14 @@ class ExperimentParams:
 
 EXPERIMENTS = [
     ExperimentParams(
+        name='se_resnext50_cutmix_more_patience',
+        template='fastai.ipynb',
+        params=dict(
+            ENCODER_ARCH='se_resnext50_32x4d', BATCH_SIZE=192,
+            USE_FP16=True, USE_CUTMIX=True, REDUCE_LR_PATIENCE=6
+        )
+    ),
+    ExperimentParams(
         name='effb0_cutmix_more_patience',
         template='fastai.ipynb',
         params=dict(
