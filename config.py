@@ -12,7 +12,7 @@ class ExperimentParams:
 EXPERIMENTS = [
     ExperimentParams(
         name='se_resnext50_finetune_mixup_224',
-        template='fastai.ipynb',
+        template='fastai-stage2-finetune.ipynb',
         params=dict(
             ENCODER_ARCH='se_resnext50_32x4d', BATCH_SIZE=64,
             IMG_SIZE=224, USE_MIXUP=True, LOAD_EXPERIMENT = "lex/bengaliai-cv19/l18p1wge",
