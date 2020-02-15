@@ -21,6 +21,14 @@ EXPERIMENTS = [
         )
     ),
     ExperimentParams(
+        name='se_resnext50_mixup_and_cutmix_more_patience',
+        template='fastai.ipynb',
+        params=dict(
+            ENCODER_ARCH='se_resnext50_32x4d', BATCH_SIZE=192,
+            USE_FP16=True, USE_CUTMIX=True, USE_MIXUP=True, REDUCE_LR_PATIENCE=6
+        )
+    ),
+    ExperimentParams(
         name='se_resnext50_discrim_lr_cutmix_more_patience',
         template='fastai.ipynb',
         params=dict(
