@@ -11,6 +11,16 @@ class ExperimentParams:
 
 EXPERIMENTS = [
     ExperimentParams(
+        name='se_resnext50_mixup_and_cutmix_more_training',
+        template='fastai.ipynb',
+        params=dict(
+            ENCODER_ARCH='se_resnext50_32x4d', BATCH_SIZE=192,
+            USE_FP16=True, USE_CUTMIX=True, USE_MIXUP=True, REDUCE_LR_PATIENCE=5,
+            REDUCE_LR_FACTOR=0.5, LOAD_EXPERIMENT='lex/bengaliai-cv19/xde8r372',
+            LR=0.0001
+        )
+    ),
+    ExperimentParams(
         name='se_resnext50_mixup_and_cutmix_pretrain_first_channel_lower_lr',
         template='fastai.ipynb',
         params=dict(
