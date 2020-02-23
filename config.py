@@ -42,7 +42,7 @@ EXPERIMENTS = [
             GRAPHEME_ROOT_WEIGHT=2/4,
             VOWEL_DIACRITIC_WEIGHT=1/4,
             CONSONANT_DIACRITIC_WEIGHT=1/4,
-            LOAD_EXPERIMENT='lex/bengaliai-cv19/xde8r372'
+            LOAD_EXPERIMENT='lex/bengaliai-cv19/gep4gsie'
         )
     ),
     ExperimentParams(
