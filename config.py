@@ -10,6 +10,41 @@ class ExperimentParams:
 
 
 EXPERIMENTS = [
+     ExperimentParams(
+        name='se_resnext50_retrain_128',
+        template='fastai-mish-and-no-max-pool-last-layers.ipynb',
+        params=dict(
+            ENCODER_ARCH='se_resnext50_32x4d',
+            IMG_SIZE=128,
+            BATCH_SIZE=192,
+            USE_FP16=True,
+            USE_CUTMIX=True,
+            USE_MIXUP=True,
+            REDUCE_LR_PATIENCE=5,
+            REDUCE_LR_FACTOR=0.5,
+            GRAPHEME_ROOT_WEIGHT=2/4,
+            VOWEL_DIACRITIC_WEIGHT=1/4,
+            CONSONANT_DIACRITIC_WEIGHT=1/4
+        )
+    ),
+    ExperimentParams(
+        name='se_resnext50_prog_resize_128',
+        template='fastai-mish-and-no-max-pool-last-layers.ipynb',
+        params=dict(
+            ENCODER_ARCH='se_resnext50_32x4d',
+            IMG_SIZE=128,
+            BATCH_SIZE=192,
+            USE_FP16=True,
+            USE_CUTMIX=True,
+            USE_MIXUP=True,
+            REDUCE_LR_PATIENCE=5,
+            REDUCE_LR_FACTOR=0.5,
+            GRAPHEME_ROOT_WEIGHT=2/4,
+            VOWEL_DIACRITIC_WEIGHT=1/4,
+            CONSONANT_DIACRITIC_WEIGHT=1/4,
+            LOAD_EXPERIMENT='lex/bengaliai-cv19/xde8r372'
+        )
+    ),
     ExperimentParams(
         name='se_resnext50_layer4_from_scratch',
         template='fastai-mish-and-no-max-pool-last-layers.ipynb',
