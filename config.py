@@ -11,6 +11,23 @@ class ExperimentParams:
 
 EXPERIMENTS = [
     ExperimentParams(
+        name='se_resnext50_add_gridmask',
+        template='fastai-mish-and-no-max-pool-last-layers.ipynb',
+        params=dict(
+            ENCODER_ARCH='se_resnext50_32x4d',
+            IMG_SIZE=64,
+            BATCH_SIZE=768,
+            USE_FP16=True,
+            USE_CUTMIX=True,
+            USE_MIXUP=True,
+            REDUCE_LR_PATIENCE=5,
+            REDUCE_LR_FACTOR=0.5,
+            GRAPHEME_ROOT_WEIGHT=2/4,
+            VOWEL_DIACRITIC_WEIGHT=1/4,
+            CONSONANT_DIACRITIC_WEIGHT=1/4
+        )
+    ),
+    ExperimentParams(
         name='se_resnext50_prog_resize_224_from_128',
         template='fastai-mish-and-no-max-pool-last-layers.ipynb',
         params=dict(
